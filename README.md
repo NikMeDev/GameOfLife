@@ -24,6 +24,16 @@ g++ gui.cpp GoL.cpp -o GoL -lsfml-graphics -lsfml-window -lsfml-system
 ```bash
 ./GoL example.grid 1000
 ```
+### Grid Format
+On the first row, specify the width and height of the grid, then specify the WxH matrix, where **0** is a dead cell and **1** is a live cell.
+#### Example:
+```
+5 4
+00000
+00100
+00100
+00100
+```
 ### GUI version
 ```bash
 ./GoL [wight] [height] //default is 70x70
